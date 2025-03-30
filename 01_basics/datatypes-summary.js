@@ -40,3 +40,37 @@ const myfunction = function(){
 }
 
 console.log(typeof outSideTemp);
+
+
+
+
+//*******************************
+
+
+//two types of memory  
+
+// STACK  (PRIMITIVE )   OR   HEAP(NON PRMIITVE)
+
+//E.G
+
+let myYoutubeName = "ravisainidotcom"
+
+let anotherName = myYoutubeName
+anotherName = "raviravi"
+
+console.log(anotherName);
+console.log(myYoutubeName);
+
+//if we change the name of data ,the preovious name didn't change becoz of the new name, that is the copy of the previous data.
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@ybl" 
+}
+
+let userTwo = userOne
+
+userTwo.email = "ravi@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
